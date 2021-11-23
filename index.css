@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: gray;
+    
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  height: 250px;
+  background-image: url(bande.png);
+}
+
+h1{
+    text-align: center;
+}
+
+
+.box{
+    margin-left: 420px;
+    margin-top: 50px;
+    height: 700px;
+    width: 700px;
+    background-image: url(grosse.png);
+}
+
+.texte1{
+    text-align: center;
+}
+
+#conteneur1{
+    display: flex;
+}
+
+.boite{
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-image: url(remix.png);
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.textboi{
+    float: right;
+    width: 500px;
+    height: 500px;
+   
+    margin-left: 75px;
+    margin-top: 200px;
+}
+
+.boite1{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-image: url(cuisine.png);
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.textboi1{
+    float: left;
+    width: 500px;
+    height: 500px;
+   
+    
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.box1{
+    margin-left: 420px;
+    margin-top: 50px;
+    height: 700px;
+    width: 700px;
+    background-image: url(sport.png);
+}
+
+.texte2{
+    text-align: center;
+}
+
+.box3{
+    margin-left: 420px;
+    margin-top: 50px;
+    height: 700px;
+    width: 700px;
+    background-image: url(collab.png);
+}
+form {
+    margin-top: 60px;
+    width: 25%;
+    background-color: #EBEF98;
+    padding: 40px 60px;
+    border-radius: 10px;
+    margin-left: 35%;
+  
+  }
+  
+  form h1{
+    color: #eb7371;
+    text-align: center;
+  }
+  #container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  form .social-media{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  form .social-media p{
+    padding: 5px;
+    width: 20px;
+    margin-left: 10px;
+    border-radius: 100px;
+    border: 1px solid #545454;
+    text-align: center;
+    cursor: pointer;
+    color: #545454;
+  }
+  
+  form .inputs{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form .inputs input[type='text'], input[type='pseudo']{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  form .inputs input[type='text'], input[type='password']{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  form p.inscription{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #878787;
+  }
+  
+  form p.inscription span{
+    color: #eb7371;
+  }
+  
+  form button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #f2f2f2;
+    
+    background-color: #eb7371;
+    outline: none;
+    cursor: pointer;
+  }
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  input[type=submit] {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #eb7371;
+    outline: none;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+  }
+  
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+  @media(max-width: 767px){
+          .footer-col{
+              width: 50%;
+              margin-bottom: 30px;
+          }
+  }
+  @media(max-width: 574px){
+          .footer-col{
+              width: 100%;
+          }
+  }
+  .footer{
+          background-color: #24262b;
+          padding: 20px 0;
+          font-family: 'Elsie', cursive;
+         
+          
+          
+  }
+  .container{
+      max-width: 1170px;
+      margin: auto;
+      text-align: center; 
+      width: 100%;
+      margin-left: 250px; 
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+      
+      
+     
+  }
+  ul{
+      list-style: none;
+      }
+  .footer1 h4{
+  
+          font-size: 18px;
+          color: #ffffff;
+          text-transform: capitalize;
+          margin-bottom: 35px;
+          font-weight: 500;
+          position: relative;
+        
+      }
+  .footer1 h4::before{
+          content: '';
+          position: absolute;
+          left: 0px;
+          bottom: -10px;
+          background-color: #b0f2b6;
+          height: 2px;
+          box-sizing: border-box;
+          width: 50px;
+          margin-left: 60px;
+      }
+  .footer1{
+      width: 25%;
+      padding: 0 15px;
+      
+  }
+  .footer1 ul{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-left: 50px;
+  }
+  .footer1 ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer1 ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+      
+  }
+  .footer1 ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer1 .s-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: #CCF399;
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer1 .s-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  
+  }
+  
+  .footer1 small{
+  
+      display: flex;
+      color: #ffffff;
+    }

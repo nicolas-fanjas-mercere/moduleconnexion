@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="Fr">
 
@@ -15,12 +22,18 @@
 <ul>
 <li><a href="index.php">Accueil</a></li>
     <li><a href="présentation.php">Présentation</a></li>
-    <li><a href="remerciment.php">Remerciments</a></li>
+    <li><a href="remerciment.php">Remerciements</a></li>
     <li class="deroulant"><a href="#">Espace Membres &ensp;</a>
       <ul class="sous">
-        <li><a href="connexion.php">Se connecter</a></li>
-        <li><a href="Inscription.php">S'inscrire</a></li>
-        <li><a href="crash.php">Déconnexion</a></li>
+        <?php 
+        if (isset($_SESSION["id"])) {
+        echo "<li><a href='crash.php'>Déconnexion</a></li>";
+        echo "<li><a href='profil.php'>Profil</a></li>"; 
+         } else {
+        echo "<li><a href='connexion.php'>Se connecter</a></li>";
+        echo "<li><a href='Inscription.php'>Sinscrire</a></li>";
+    };
+        ?>
       </ul>
     </li>
  
